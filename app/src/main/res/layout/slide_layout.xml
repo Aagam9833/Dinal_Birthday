@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bday_bg_quiz"
+    android:orientation="vertical">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/easy_flip_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoFlipBack="false"
+        app:autoFlipBackTime="1000"
+        app:flipDuration="400"
+        app:flipEnabled="true"
+        app:flipFrom="front"
+        app:flipOnTouch="false"
+        app:flipType="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/friend_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="50dp"/>
+
+                <TextView
+                    android:id="@+id/friend_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="25sp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:background="#CCFFFFFF"/>
+
+                <Button
+                    android:id="@+id/flip_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="FLIP BACK" />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:elevation="100dp"
+            android:fitsSystemWindows="true"
+            app:cardBackgroundColor="#AA000000"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lets test your friendship"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:fitsSystemWindows="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#55000000"
+                android:padding="30dp">
+
+
+                <TextView
+                    android:id="@+id/quiz_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Hello, this is the hint"
+                    android:textSize="17sp"
+                    android:textColor="#FFFFFF"/>
+
+
+                <EditText
+                    android:id="@+id/quiz_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:hint="Who Am I?"
+                    android:textColorHint="#FFFFFF"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="You Serious?"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</LinearLayout>

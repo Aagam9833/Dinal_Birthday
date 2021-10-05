@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "636738287671",
+    "project_id": "dinal-s-birthday",
+    "storage_bucket": "dinal-s-birthday.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636738287671:android:0d6e885401bfb2f9ae27b2",
+        "android_client_info": {
+          "package_name": "com.example.dinalsbirthday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636738287671-njb6fv83bddeo5co5mp4pg1sl4289f38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEZwAOGE8ovviXSd-HXJnvwX4r0C_7NtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636738287671-njb6fv83bddeo5co5mp4pg1sl4289f38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
